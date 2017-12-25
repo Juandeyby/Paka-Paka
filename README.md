@@ -9,4 +9,4 @@ Este proyecto esta bajo la licencia apache 2.0
 * Puzzle
 * Palabras Quechua
 
-## Historia del Juego
+## Historia del Juego V.0.1
