@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/SimpleTouchController/Scenes/Example1.unity
+- path: Assets/Example1.unity
   isLoaded: 1
   isActive: 1
