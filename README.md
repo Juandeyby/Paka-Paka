@@ -10,7 +10,7 @@ Este proyecto esta bajo la licencia apache 2.0
 * Palabras Quechua
 
 ## Objetos
-![GitHub Logo](/Documents/images/objetos1.jpg)
+![GitHub Logo](\Paka-Paka\Paka-Paka\Documents\images\objetos1.jpg)
 Format: ![Alt Text](url)
 
 ## Historia del Juego V.0.1
