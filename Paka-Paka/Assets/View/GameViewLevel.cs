@@ -9,6 +9,8 @@ using UnityEngine.UI;
 public class GameViewLevel : ElementLevel
 {
 	// Reference Main Camera
+	public AudioSource audioSourceCamera;
+	// Reference Main Camera
 	public GameObject mainCamera;
 	// Reference second sound
 	public AudioClip secondClip;
@@ -19,6 +21,8 @@ public class GameViewLevel : ElementLevel
 	public Text time;
 	// Lost and Win
 	public Text lost_win;
+	// Reference Main Camera
+	public Text newRecord;
 	// List elements
 	public GameObject [] elemets;
 	//AudioSource
@@ -26,6 +30,9 @@ public class GameViewLevel : ElementLevel
 
 	// Use this for initialization
 	void Start () {
+		lost_win.gameObject.SetActive (false);
+		newRecord.gameObject.SetActive (false);
+		newRecord.GetComponent<Text>().text = app.model.record;
 		time.text = app.model.timeLevel + "";
 		audioSource = GetComponent<AudioSource> ();
 	}

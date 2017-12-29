@@ -188,7 +188,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '- Tiempo'
+  m_Text: '- Puntos'
 --- !u!222 &1404205043
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -266,7 +266,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '- Tiempo'
+  m_Text: '- Puntos'
 --- !u!222 &1627587191
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -349,7 +349,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '- Tiempo'
+  m_Text: '- Puntos'
 --- !u!222 &1974130655
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -518,6 +518,16 @@ Prefab:
         type: 2}
       propertyPath: m_SizeDelta.y
       value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 82236705258883866, guid: 74006d0c6d9cad048a61a9d48f15bf21,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 7c2cf8a8b51c584409bedebb6f7edb23, type: 3}
+    - target: {fileID: 82236705258883866, guid: 74006d0c6d9cad048a61a9d48f15bf21,
+        type: 2}
+      propertyPath: m_Volume
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 74006d0c6d9cad048a61a9d48f15bf21, type: 2}

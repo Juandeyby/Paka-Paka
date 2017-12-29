@@ -94,10 +94,10 @@ public class GameControllerLevel : ElementLevel {
 		}
 
 		//Refresh elements actives
+		deactiveElements = false;
 		for (int i = 0; i < app.view.elemets.Length && refreshElements; i++) {
-			deactiveElements = false;
 			if (app.view.elemets [i].activeSelf)
-				deactiveElements = true;
+				deactiveElements = true || deactiveElements;
 		}
 		if (!deactiveElements && refreshElements) {
 			StartCoroutine (Lost_Win (app.view.winClip, app.model.win, true));
@@ -110,13 +110,19 @@ public class GameControllerLevel : ElementLevel {
 		app.view.audioSource.clip = clip;
 		app.view.lost_win.text = lost_win;
 		app.view.lost_win.gameObject.SetActive (true);
+		app.view.audioSourceCamera.Stop ();
 		app.view.audioSource.Play ();
 		//Save player WIN
 		if (lost_win_bool) {
 			Player player = LoadPlayer ();
 			int newTime;
 			int.TryParse(app.view.time.text, out newTime);
-			player.points_level [actualLevel] = newTime;
+			// Nuevo Registro = Menor tiempo en busqueda
+			if (player.points_level [actualLevel] < newTime ||
+				player.points_level [actualLevel] == 0) {
+				app.view.newRecord.gameObject.SetActive (true);
+				player.points_level [actualLevel] = newTime;
+			}
 			player.level = actualLevel + 1;
 			SavePlayer (player);
 		}

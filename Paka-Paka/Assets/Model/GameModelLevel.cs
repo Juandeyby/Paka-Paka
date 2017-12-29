@@ -11,4 +11,5 @@ public class GameModelLevel : ElementLevel {
 	public string win = "Ganaste";
 	public string lost = "Perdiste";
 	public int Levels = 3;
+	public string record = "Nuevo Registro";
 }
