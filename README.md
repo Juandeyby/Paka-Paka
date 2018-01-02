@@ -14,5 +14,9 @@ Este proyecto esta bajo la licencia apache 2.0
 ![Objects](objetos1.png)
 *Objetos Nivel I y II
 ![Objects2](objetos2.png)
+*Mesa de cartas Nivel I
+![Objects](objetosn1.png)
+*Mesa de cartas Nivel II
+![Objects](objetosn2.png)
 
 ## Historia del Juego V.0.1
