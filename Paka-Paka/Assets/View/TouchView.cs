@@ -2,8 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Touch : ElementLevel {
-
+public class TouchView : ElementLevel {
 	public GameObject effect;
 	public GameObject image;
 	public AudioClip clip;

@@ -7,6 +7,7 @@ using UnityEngine.EventSystems;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
 using System;
+using UnityEngine.Advertisements;
 
 // BounceController.cs
 
@@ -14,19 +15,17 @@ using System;
 public class GameControllerLevel : ElementLevel {
 
 	//Referense to Level Actual
-	public int actualLevel = 0;
+	int actualLevel;
 	//Refresh elements
 	bool deactiveElements;
 	bool refreshElements;
 
 	void Start()
 	{
-		//Button jugarbtn = jugarButton.GetComponent<Button>();
-		//jugarbtn.onClick.AddListener(TaskOnClick);
-
-		//Button salirbtn = jugarButton.GetComponent<Button>();
-		//salirbtn.onClick.AddListener(TaskOnClicks);
-
+		Advertisement.Initialize ("1654248");
+		Advertisement.Show ();
+		//Level actual
+		actualLevel = app.model.LevelActual;
 		//Refresh elements
 		refreshElements = true;
 	}
@@ -63,6 +62,12 @@ public class GameControllerLevel : ElementLevel {
 	//Destruye el object
 	public void DestroyObject (GameObject element) {
 		Destroy (element);
+	}
+
+	//Audio element
+	public void AudioObject (GameObject element) {
+		element.GetComponent<AudioSource> ().clip = element.GetComponent<TouchView>().clip;
+		element.GetComponent<AudioSource> ().Play ();
 	}
 
 	private float tiempo_inicio = 0.0f;
