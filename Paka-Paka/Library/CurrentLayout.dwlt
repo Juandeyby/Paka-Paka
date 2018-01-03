@@ -200,8 +200,8 @@ MonoBehaviour:
     y: 0
     width: 288
     height: 596
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -225,8 +225,8 @@ MonoBehaviour:
     y: 0
     width: 573
     height: 596
-  m_MinSize: {x: 204, y: 221}
-  m_MaxSize: {x: 4004, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 16}
   m_Panes:
   - {fileID: 16}
@@ -372,21 +372,21 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 2496f8ff2897f8ff4a98f8ff6898f8ff5099f8ff42c0f8ff7e60f9ff1c61f9ff2662f9ff4462f9ff2c63f9ff5e75f9fffa75f9ff0477f9ff2277f9ff0a78f9ff3ee3f9ffdae3f9ffe4e4f9ff02e5f9ffeae5f9ff7a4efcffa654fcff6a58fcff346efcffa271fcff8a77fcff3a78fcff4479fcff6279fcff4a7afcffcc9cfcff72a0fcff22a1fcff2ca1fcff4ea1fcff56a1fcffeca2fcffc4a6fcff74a7fcff7ea8fcff9ca8fcff84a9fcffacaefcffd4b7fcff74c0fcff18c5fcff88cafcff4ad0fcff56fcfcffac25fdfffc2dfdffcc3efdffce3efdff9a47fdff184cfdff6051fdffe85efdff0e66fdffae8efdff4295fdffd0cbfdffd2cbfdffd6cbfdffd8cbfdff22d5fdff0cddfdfffae2fdffa215feffae1bfeff8cf5ffff96fbffff00000000002d0000102d00002a2d0000dc2d0000e62d0000fa2d00002e2e0000762e00007c2e0000c82e0000e22e0000a23f0000ac40000028410000364b0000de4f0000205e00002a5f00007e610000d2630000266600007a680000aa700000367c0000c086000014890000688b000010900000b894000028a8000052a8000032a9000008aa0000a6b90000d0b90000b0ba00002cbb000086bb0000a2c00000acc1000028c20000f6c2000006c3000020c30000e2c30000ecc3000000c4000030c400007cc4000082c40000d6c40000e6d1000010d20000d2dd000066de0000bcde000074e700009ee70000b2f1000038f2000084f20000
+    m_ExpandedIDs: 8ab6ffff8cb7ffffb2b8ffffd4b8ffffc0b9ffff98f1ffff46f2ffff68f3ffff86f3ffff6ef4ffff9efbffff000000004a40000074400000544100002a420000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: chosa2
-      m_OriginalName: chosa2
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: -441474
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 9}
     m_SearchString: 
@@ -423,14 +423,14 @@ MonoBehaviour:
     height: 575
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 3665.445931414069
+  lastFramingTime: 2020.0684516096408
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -0.00000047683716, y: 2.23, z: 0.0000011920929}
+    m_Target: {x: 177.25, y: 35.449997, z: 0}
     speed: 2
-    m_Value: {x: -0.00000047683716, y: 2.23, z: 0.0000011920929}
+    m_Value: {x: 177.25, y: 35.449997, z: 0}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -456,11 +456,11 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0.3116124, y: -0.08965895, z: 0.029490149, w: 0.94565016}
     speed: 2
-    m_Value: {x: 0.31157112, y: -0.08964708, z: 0.029486243, w: 0.94552493}
+    m_Value: {x: -0.3116124, y: 0.08965895, z: -0.02949015, w: -0.9456502}
   m_Size:
-    m_Target: 32.305027
+    m_Target: 187.26738
     speed: 2
-    m_Value: 32.305027
+    m_Value: 187.26738
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -588,33 +588,33 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets
+    - Assets/Sounds
   m_ViewMode: 1
   m_StartGridSize: 57
   m_LastFolders:
-  - Assets
+  - Assets/Sounds
   m_LastFoldersGridSize: 57
   m_LastProjectPath: C:\Users\asus\Documents\GitHub\Paka-Paka\Paka-Paka
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 1e280000
-    m_LastClickedID: 10270
-    m_ExpandedIDs: 000000001e280000762800009a280000cc2800000a290000e6290000b62a0000c42c0000c62c0000c82c0000ca2c0000cc2c0000ce2c0000d02c000000ca9a3bffffff7f
+    m_SelectedIDs: 02290000
+    m_LastClickedID: 10498
+    m_ExpandedIDs: 000000001a28000086280000ac280000de2800001c290000f8290000c82a00007430000076300000783000007a3000007c3000007e3000008030000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Externo
-      m_OriginalName: Externo
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 10882
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 12}
     m_SearchString: 
@@ -628,7 +628,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000001e280000762800009a280000cc2800000a290000e6290000b62a0000c42c0000c62c0000c82c0000ca2c0000cc2c0000ce2c0000d02c0000
+    m_ExpandedIDs: 000000001a28000086280000ac280000de2800001c290000f8290000c82a00007430000076300000783000007a3000007c3000007e30000080300000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
