@@ -7,13 +7,15 @@ using UnityEngine.EventSystems;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
 using System;
-using UnityEngine.Advertisements;
+using GoogleMobileAds;
+using GoogleMobileAds.Api;
 
 // BounceController.cs
 
 // Controls the app workflow.
 public class GameControllerLevel : ElementLevel {
-
+	//ADS
+	private RewardBasedVideoAd rewardBasedVideo;
 	//Referense to Level Actual
 	int actualLevel;
 	//Refresh elements
@@ -22,13 +24,59 @@ public class GameControllerLevel : ElementLevel {
 
 	void Start()
 	{
-		Advertisement.Initialize ("1654248");
-		Advertisement.Show ();
+		//ADS
+		rewardBasedVideo = RewardBasedVideoAd.Instance;
+		#if UNITY_ANDROID
+		string appId = "ca-app-pub-5917530822811665~6054041533";
+		#elif UNITY_IPHONE
+		string appId = "ca-app-pub-3940256099942544~1458002511";
+		#else
+		string appId = "unexpected_platform";
+		#endif
+
+		MobileAds.SetiOSAppPauseOnBackground(true);
+
+		// Initialize the Google Mobile Ads SDK.
+		MobileAds.Initialize(appId);
+
+		RequestRewardedVideo ();
+
+		//ADS
+		// Get singleton reward based video ad reference.
+		this.rewardBasedVideo = RewardBasedVideoAd.Instance;
+
 		//Level actual
 		actualLevel = app.model.LevelActual;
 		//Refresh elements
 		refreshElements = true;
 	}
+
+	private void ShowRewardBasedVideo()
+	{
+		if (this.rewardBasedVideo.IsLoaded())
+		{
+			this.rewardBasedVideo.Show();
+		}
+		else
+		{
+			Debug.Log ("Reward based video ad is not ready yet");
+		}
+	}
+
+	//ADS
+	private void RequestRewardedVideo()
+	{
+		#if UNITY_ANDROID
+		string adUnitId = "ca-app-pub-5917530822811665/7345628822";
+		#elif UNITY_IPHONE
+		string adUnitId = "ca-app-pub-3940256099942544/1712485313";
+		#else
+		string adUnitId = "unexpected_platform";
+		#endif
+
+		rewardBasedVideo.LoadAd (new AdRequest.Builder().Build(), adUnitId);
+	}
+
 
 	public void LoadScene(string level)
 	{
@@ -89,6 +137,7 @@ public class GameControllerLevel : ElementLevel {
 				}
 				//Lost test
 				if (newTime <= 0) {
+					ShowRewardBasedVideo ();
 					refreshElements = false;
 					StartCoroutine (Lost_Win (app.view.lostClip, app.model.lost, false));
 				} else {

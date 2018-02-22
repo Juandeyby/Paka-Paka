@@ -7,7 +7,6 @@ using UnityEngine.EventSystems;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
 using System;
-
 // BounceController.cs
 
 // Controls the app workflow.
